@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div class="container">
+    <div>
+        <h2>Delete Product</h2>
+        <h3>Are you sure you want to delete this product?</h3>
+        <form method="post">
+            {% csrf_token %}
+            <button type="submit">Yes</button>
+            <a href="{% url 'outofstock' %}">Back To Product Page</a>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
